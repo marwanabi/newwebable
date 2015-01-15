@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("p").click(function(){
+    var yo=$("p");
+    yo.animate({wordSpacing:'300px'},1000);
+    
+    var hi=$(".i1");
+    hi.animate({display:'block'});
+    hi.animate({left:'480px'});
+    
+    hi.animate({width:'400px',opacity:'1'},"slow");
+    hi.animate({marginTop:'-20%'},1000);
+
+
+     var ko=$("p");
+    ko.animate({wordSpacing:'7px'},8050);
+
+
+   
+  });
+
+});
+</script> 
+
+</head>
+ 
+<body style="background-color:#2C4892;">
+	
+	<img class="i1"src="webable.png"style="position:absolute;display:none;margin-top:10%;">
+</img>
+<p id="firstHeading"style="letter-spacing: 10px;font-family: fantasy;color: white;text-align: center;letter-spacing: 10px;margin-top:22%;">
+ 	TAKE OVER THE INTERNET
+</p>
+
+<img src="cloud3.png"></img>
+<div id="bg" style="margin-top: -40%;float: right;">
+  <div id="container1">
+    <ul id="scene">
+      
+      <li  class="layer" data-depth="1"><img src="cloud2.png" ></li>
+      <li  class="layer" data-depth="3"><img src="cloud1.png" ></li>
+
+      
+      
+    </ul> 
+  </div>  
+   
+</div>
+ 
+</div>
+  
+   
+ </div>  
+</div>
+
+  
+  <script src="deploy/parallax.min.js"></script>
+  <script>
+
+ 
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+
+  </script>
+</body>
+</html>
